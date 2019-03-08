@@ -4,19 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tabuleiro.Entities
+namespace TabuleiroEntities
 {
     class Tabuleiro
     {
         public int Linhas { get; set; }
         public int Colunas { get; set; }
-        private Peca[,] Pecas;
+        private Peca[,] pecas;
 
         public Tabuleiro (int linhas, int colunas)
         {
             Linhas = linhas;
             Colunas = colunas;
-            Pecas = new Peca[linhas, colunas];
+            pecas = new Peca[linhas, colunas];
+        }
+        public Peca Peca(int linha, int coluna)
+        {
+            return pecas[linha, coluna];
         }
     }
 }
