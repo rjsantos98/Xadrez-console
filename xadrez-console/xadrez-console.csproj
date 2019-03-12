@@ -46,6 +46,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TabuleiroEntities\Enum\Cor.cs" />
+    <Compile Include="TabuleiroEntities\Exceptions\TabuleiroException.cs" />
     <Compile Include="TabuleiroEntities\Peca.cs" />
     <Compile Include="TabuleiroEntities\Posicao.cs" />
     <Compile Include="TabuleiroEntities\Tabuleiro.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="XadrezEntities\Cavalo.cs" />
     <Compile Include="XadrezEntities\Dama.cs" />
     <Compile Include="XadrezEntities\Peao.cs" />
+    <Compile Include="XadrezEntities\PosicaoXadrez.cs" />
     <Compile Include="XadrezEntities\Rei.cs" />
     <Compile Include="XadrezEntities\Torre.cs" />
   </ItemGroup>
