@@ -10,7 +10,7 @@ namespace TabuleiroEntities
     {
         public int Linhas { get; set; }
         public int Colunas { get; set; }
-        private Peca[,] pecas;
+        private readonly Peca[,] pecas;
 
         public Tabuleiro (int linhas, int colunas)
         {
@@ -21,6 +21,11 @@ namespace TabuleiroEntities
         public Peca Peca(int linha, int coluna)
         {
             return pecas[linha, coluna];
+        }
+        public void ColocarPeca(Peca peca, Posicao pos)
+        {
+            pecas[pos.Linha, pos.Coluna] = peca;
+            peca.Posicao = pos;
         }
     }
 }
