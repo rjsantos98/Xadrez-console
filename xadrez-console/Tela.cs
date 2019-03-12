@@ -1,5 +1,6 @@
 ﻿using System;
 using TabuleiroEntities;
+using XadrezEntities;
 
 namespace xadrez_console
 {
@@ -9,6 +10,10 @@ namespace xadrez_console
         {
             for (int i = 0; i < tab.Linhas; i++)
             {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.Write(8 - i + " ");
+                Console.ForegroundColor = ConsoleColor.White;
+
                 for (int j = 0; j < tab.Colunas; j++)
                 {
                     if (tab.Peca(i, j) == null)
@@ -17,10 +22,28 @@ namespace xadrez_console
                     }
                     else
                     {
-                        Console.Write($"{tab.Peca(i, j)} ");
+                        ImprimirPeca(tab.Peca(i, j));
+                        Console.Write(" ");
                     }
                 }
                 Console.WriteLine();
+            }
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("  A B C D E F G H");
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+
+        public static void ImprimirPeca(Peca peca)
+        {
+            if (peca.Cor == Cor.Branca)
+            {
+                Console.Write(peca);
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.Write(peca);
+                Console.ForegroundColor = ConsoleColor.White;
             }
         }
     }
