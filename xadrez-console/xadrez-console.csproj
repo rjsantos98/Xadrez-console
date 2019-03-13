@@ -54,6 +54,7 @@
     <Compile Include="XadrezEntities\Bispo.cs" />
     <Compile Include="XadrezEntities\Cavalo.cs" />
     <Compile Include="XadrezEntities\Dama.cs" />
+    <Compile Include="XadrezEntities\PartidaDeXadrez.cs" />
     <Compile Include="XadrezEntities\Peao.cs" />
     <Compile Include="XadrezEntities\PosicaoXadrez.cs" />
     <Compile Include="XadrezEntities\Rei.cs" />

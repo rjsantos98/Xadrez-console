@@ -16,9 +16,14 @@ namespace TabuleiroEntities
         public Peca(Tabuleiro tab, Cor cor)
         {
             Posicao = null;
+            Tab = tab;
             Cor = cor;
             QteMovimentos = 0;
-            Tab = tab;
+        }
+
+        public void IncrementarQtdMovimento()
+        {
+            QteMovimentos++;
         }
     }
 
