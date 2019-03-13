@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TabuleiroEntities
 {
-    class Peca
+    abstract class Peca
     {
         public Posicao Posicao { get; set; }
         public Cor Cor { get; protected set; }
@@ -25,6 +25,8 @@ namespace TabuleiroEntities
         {
             QteMovimentos++;
         }
+
+        public abstract bool[,] MovimentosPossiveis();
     }
 
 }
