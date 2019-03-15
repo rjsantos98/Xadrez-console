@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using TabuleiroEntities;
 using XadrezEntities;
 
@@ -33,6 +34,9 @@ namespace xadrez_console
 
             for (int i = 0; i < tab.Linhas; i++)
             {
+                List<Peca> jogador = new List<Peca>();
+;
+
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.Write(8 - i + " ");
                 Console.ForegroundColor = ConsoleColor.White;
