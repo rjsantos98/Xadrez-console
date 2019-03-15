@@ -26,6 +26,10 @@ namespace TabuleiroEntities
             QteMovimentos++;
         }
 
+        public void DecrementarQteMovimento()
+        {
+            QteMovimentos--;
+        }
         public bool ExisteMovimentosPossiveis()
         {
             bool[,] mat = MovimentosPossiveis();
